@@ -390,3 +390,14 @@ blockquote footer{margin-top:20px;color:var(--muted);font-size:14px}
   .spec-table dl>div{grid-template-columns:1fr;gap:2px}
   .eb-service{grid-template-columns:1fr;padding:20px}
 }
+
+/* v3: real Lobes logo + "Bikes" */
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--green)}
+.brand-logo{height:46px;width:auto}
+.brand-bikes{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);transform:translateY(5px)}
+.brand-light .brand-bikes{color:var(--paper)}
+.f-brand .brand-logo{height:56px}
+@media (max-width:600px){.brand-logo{height:36px}.brand-bikes{font-size:12.5px;letter-spacing:.18em}.brand{gap:7px}}
+.btn{white-space:nowrap}
+@media (max-width:600px){.header-actions{gap:6px}.header-actions .btn-primary{padding:9px 12px;font-size:13px}.icon-btn{width:36px;height:36px}.menu-toggle{width:34px}}
+@media (max-width:380px){.header-actions .icon-btn{display:none}}

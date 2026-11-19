@@ -624,3 +624,4 @@ blockquote footer{margin-top:20px;color:var(--muted);font-size:14px}
 @media (min-width:1321px){.hdr-login{display:none}}
 @media (max-width:1320px){.header-actions{margin-left:auto}}
 @media (max-width:600px){.pt-price .rv-check{display:block;width:fit-content;margin:4px 0 0}}
+.pt-price .rv-check{display:block;width:fit-content;margin:5px 0 0}

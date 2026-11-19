@@ -22,14 +22,16 @@
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Lobes Bikes – zur Startseite"><img src="assets/lobes-logo.svg" alt="lobes" class="brand-logo"><span class="brand-bikes">Bikes</span></a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#miete">Miete</a>
+      <a href="#miete">Kinder-Abo</a>
+      <a href="#stundenmiete">Stundenmiete</a>
       <a href="#e-bikes">E-Bikes</a>
+      <a href="#konto">Mein Konto</a>
       <a href="#ueber-uns">Über uns</a>
       <a href="#faq">FAQ</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
     <div class="header-actions">
-      <button type="button" class="btn btn-ghost btn-sm noop">Anmelden</button>
+      <a href="#konto" class="btn btn-ghost btn-sm">Anmelden</a>
       <button type="button" class="icon-btn noop" aria-label="Warenkorb (Vorschau)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
       <button type="button" class="btn btn-primary btn-sm noop">Abo starten</button>
       <button type="button" class="menu-toggle noop" aria-label="Menü"><span></span><span></span></button>
@@ -279,6 +281,158 @@
   </div>
 </section>
 
+<!-- ABO-ABLAUF (wie Velo-Miet-App) -->
+<section class="section section-paper" id="abo-ablauf">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kindervelo-Abo · So läuft's in der App</p>
+      <h2>Abo abschliessen – <em>in drei Klicks</em></h2>
+      <p class="section-lead">So sieht der Abschluss auf der Produktseite aus. Danach verwaltest du alles im Velo-Portal: Grössentausch, Pausieren, Kündigen.</p>
+    </div>
+    <div class="flow-grid">
+      <div class="flow-card">
+        <div class="flow-step"><span>1</span>Rahmengrösse</div>
+        <div class="size-chips" role="radiogroup" aria-label="Rahmengrösse (Vorschau)">
+          <button type="button" class="chip-btn noop">Laufrad</button>
+          <button type="button" class="chip-btn noop">14 Zoll</button>
+          <button type="button" class="chip-btn active noop">16 Zoll</button>
+          <button type="button" class="chip-btn noop">20 Zoll</button>
+          <button type="button" class="chip-btn noop">24 Zoll</button>
+          <button type="button" class="chip-btn noop">26 Zoll</button>
+        </div>
+        <div class="flow-pick">
+          <img src="assets/kids/16-woom-go3.svg" alt="16-Zoll-Velo woom GO 3">
+          <div><b>16 Zoll</b><span>z. B. woom GO 3 · 4–6 Jahre</span></div>
+        </div>
+      </div>
+      <div class="flow-card">
+        <div class="flow-step"><span>2</span>Monatsmiete &amp; Mindestlaufzeit</div>
+        <dl class="flow-dl">
+          <div><dt>Monatsmiete</dt><dd>CHF 17.90</dd></div>
+          <div><dt>Mindestlaufzeit</dt><dd>12 Monate</dd></div>
+          <div><dt>Kaution</dt><dd>CHF 80.00 <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></dd></div>
+          <div><dt>Velo-Versicherung</dt><dd>+ CHF 2.90 <small>optional</small></dd></div>
+        </dl>
+        <p class="flow-note">Die Kaution wird beim Checkout nur blockiert und nach der Rückgabe freigegeben.</p>
+      </div>
+      <div class="flow-card flow-card-green">
+        <div class="flow-step"><span>3</span>Zusammenfassung</div>
+        <p class="flow-sum">Rahmengrösse 16 Zoll · CHF 17.90 · Kaution CHF 80.00 · Mindestlaufzeit 12 Monate</p>
+        <button type="button" class="btn btn-terra btn-block noop">In den Warenkorb</button>
+        <p class="flow-note light">Abgerechnet wird monatlich über das Shopify-Abo. Abholung und Einstellung im Laden in Solothurn.</p>
+      </div>
+    </div>
+    <div class="portal-teaser">
+      <div class="pt-copy"><span class="tag">Danach im Velo-Portal</span><p>Alles Weitere erledigst du selbst unter <b>Mein Konto</b>.</p></div>
+      <div class="pt-actions">
+        <div><b>Grössentausch</b><span>«Grössere Grösse anfragen» – wir melden uns, sobald das nächste Velo bereitsteht. Im Laden gratis.</span></div>
+        <div><b>Pausieren</b><span>«Abo pausieren» z. B. über den Winter, «Abo fortsetzen» jederzeit.</span></div>
+        <div><b>Kündigen</b><span>«Abo kündigen» geht ab Ende der Mindestlaufzeit. Vorher zeigt das Portal: «Die Mindestlaufzeit ist noch nicht vorbei.»</span></div>
+      </div>
+      <a href="#konto" class="btn btn-outline">Zum Velo-Portal</a>
+    </div>
+  </div>
+</section>
+
+<!-- STUNDEN- & TAGESMIETE (Theme-Erweiterung «Velo Miete») -->
+<section class="section" id="stundenmiete">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Stunden- &amp; Tagesmiete</p>
+      <h2>E-Bike für ein paar Stunden – <em>oder den ganzen Tag</em></h2>
+      <p class="section-lead">So erscheint der Mietkalender der App auf einer Produktseite in unserem Design: freie Tage wählen, Abholung und Rückgabe festlegen, Preis und Kaution sehen.</p>
+    </div>
+    <div class="rent-layout">
+      <div class="rent-product">
+        <div class="rent-img"><img src="assets/ebikes/BU02-hero.svg" alt="E-Bike BU02 Mid-Step" loading="lazy"></div>
+        <div class="rent-info">
+          <span class="chip">E-Bike · Kurzmiete</span>
+          <h3>BU02 <em>Mid-Step</em></h3>
+          <p>Komfort trifft Vielseitigkeit: mittelhoher Einstieg, Bafang-Mittelmotor und bis 100 km Reichweite – ideal für einen Ausflug an die Aare oder auf den Weissenstein.</p>
+          <ul class="rent-rates">
+            <li><b>CHF 12.00</b><span>pro Stunde <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></span></li>
+            <li><b>CHF 55.00</b><span>pro Tag <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></span></li>
+            <li><b>CHF 200.00</b><span>Kaution <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></span></li>
+          </ul>
+          <p class="rent-fine">Stundenweise bis max. 8 Stunden, länger bitte «Tageweise» wählen. Abholung und Rückgabe während der Öffnungszeit 09:00–18:00 <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span>.</p>
+        </div>
+      </div>
+
+      <div class="velo-rental" aria-label="Velo mieten (Vorschau)">
+        <div class="vr-head">
+          <h3 class="velo-rental__title">Velo mieten</h3>
+          <div class="vr-mode" role="tablist">
+            <button type="button" class="active noop">Stundenweise</button>
+            <button type="button" class="noop">Tageweise</button>
+          </div>
+        </div>
+        <div class="velo-rental__nav">
+          <button type="button" class="vr-nav noop" aria-label="Vorheriger Monat">‹</button>
+          <strong>November 2026</strong>
+          <button type="button" class="vr-nav noop" aria-label="Nächster Monat">›</button>
+        </div>
+        <div class="velo-rental__calendar">
+          <span class="cal-h">Mo</span>
+          <span class="cal-h">Di</span>
+          <span class="cal-h">Mi</span>
+          <span class="cal-h">Do</span>
+          <span class="cal-h">Fr</span>
+          <span class="cal-h">Sa</span>
+          <span class="cal-h">So</span>
+          <span class="cal-e"></span>
+          <span class="cal-e"></span>
+          <span class="cal-e"></span>
+          <span class="cal-e"></span>
+          <span class="cal-e"></span>
+          <span class="cal-e"></span>
+          <button type="button" class="cal-d noop" data-state="past" disabled>1</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>2</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>3</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>4</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>5</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>6</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>7</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>8</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>9</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>10</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>11</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>12</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>13</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>14</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>15</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>16</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>17</button>
+          <button type="button" class="cal-d noop" data-state="past" disabled>18</button>
+          <button type="button" class="cal-d today noop" data-state="free">19</button>
+          <button type="button" class="cal-d noop" data-state="free">20</button>
+          <button type="button" class="cal-d noop" data-state="busy">21</button>
+          <button type="button" class="cal-d noop" data-state="closed">22</button>
+          <button type="button" class="cal-d noop" data-state="free">23</button>
+          <button type="button" class="cal-d noop" data-state="free">24</button>
+          <button type="button" class="cal-d noop" data-state="free">25</button>
+          <button type="button" class="cal-d noop" data-state="free">26</button>
+          <button type="button" class="cal-d noop" data-state="busy">27</button>
+          <button type="button" class="cal-d sel noop" data-state="free">28</button>
+          <button type="button" class="cal-d noop" data-state="closed">29</button>
+          <button type="button" class="cal-d noop" data-state="free">30</button>
+        </div>
+        <div class="vr-legend"><span class="lg free"></span>Verfügbar <span class="lg busy"></span>Belegt <span class="lg closed"></span>Geschlossen <span class="lg sel"></span>Gewählt</div>
+        <div class="vr-times">
+          <div><span class="vr-label">Abholung · Sa 28.11.</span><div class="slots"><button type="button" class="slot off noop">09:00</button><button type="button" class="slot active noop">10:00</button><button type="button" class="slot noop">11:00</button><button type="button" class="slot noop">12:00</button><button type="button" class="slot noop">13:00</button><button type="button" class="slot noop">14:00</button><button type="button" class="slot noop">15:00</button><button type="button" class="slot noop">16:00</button><button type="button" class="slot noop">17:00</button></div></div>
+          <div><span class="vr-label">Rückgabe · Sa 28.11.</span><div class="slots"><button type="button" class="slot noop">11:00</button><button type="button" class="slot noop">12:00</button><button type="button" class="slot noop">13:00</button><button type="button" class="slot noop">14:00</button><button type="button" class="slot noop">15:00</button><button type="button" class="slot active noop">16:00</button><button type="button" class="slot noop">17:00</button><button type="button" class="slot noop">18:00</button></div></div>
+        </div>
+        <div class="vr-price">
+          <div class="vr-row"><span>6 Stunden × CHF 12.00</span><b>CHF 72.00</b></div>
+          <div class="vr-row muted"><span>Kaution (separate Position, wird nach Rückgabe erstattet)</span><b>CHF 200.00</b></div>
+          <p class="vr-status" role="status"><span class="ok-dot"></span>Verfügbar</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-block noop">In den Warenkorb</button>
+        <p class="vr-fine">Zwischen zwei Mieten planen wir 2 Stunden für Check und Akku-Laden ein. Bei verspäteter Rückgabe gilt nach 30 Minuten Kulanz ein Zuschlag pro angefangene Stunde. <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- E-BIKES -->
 <section class="section section-ink" id="e-bikes">
   <div class="wrap">
@@ -414,6 +568,82 @@
       <div><b>Einstellung &amp; Übergabe</b><span>in unserer Werkstatt</span></div>
       <div><b>Service</b><span>vor Ort in Solothurn</span></div>
       <button type="button" class="btn btn-terra noop">Probefahrt anfragen</button>
+    </div>
+  </div>
+</section>
+
+<!-- MEIN KONTO / VELO-PORTAL (/apps/velo/portal) -->
+<section class="section section-sand2" id="konto">
+  <div class="wrap">
+    <div class="portal-top">
+      <div>
+        <p class="eyebrow">Mein Konto · Velo-Portal</p>
+        <h2 class="portal-h">Mein Velo</h2>
+        <p class="section-lead">Angemeldet als <b>Beispielkonto</b> <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span> · <span class="url">lobes-bikes.ch/apps/velo/portal</span></p>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm noop">Abmelden</button>
+    </div>
+    <div class="notice" role="status">Gespeichert. Deine Anfrage für die nächste Grösse ist bei uns eingegangen.</div>
+
+    <div class="portal-grid">
+      <div class="portal-col">
+        <h3 class="portal-sub">Abos</h3>
+        <article class="abo-card">
+          <div class="abo-img"><img src="assets/kids/16-woom-go3.svg" alt="16-Zoll-Velo woom GO 3"></div>
+          <div class="abo-body">
+            <div class="abo-top"><h4>Kindervelo-Abo · 16 Zoll</h4><span class="status st-active">Aktiv</span></div>
+            <p class="abo-model">z. B. woom GO 3</p>
+            <dl class="abo-dl">
+              <div><dt>Seriennummer</dt><dd class="mono">LB16-1001 <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></dd></div>
+              <div><dt>Monatsmiete</dt><dd>CHF 17.90 + Versicherung CHF 2.90</dd></div>
+              <div><dt>Nächste Abrechnung</dt><dd>15.12.2026 <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></dd></div>
+              <div><dt>Mindestlaufzeit bis</dt><dd>15.09.2027 <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></dd></div>
+              <div><dt>Kaution</dt><dd>CHF 80.00 · Blockiert <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></dd></div>
+              <div><dt>Grössenwechsel</dt><dd><span class="status st-req">Angefragt</span> → 20 Zoll</dd></div>
+            </dl>
+            <div class="abo-actions">
+              <button type="button" class="btn btn-primary btn-sm noop">Grössere Grösse anfragen</button>
+              <button type="button" class="btn btn-outline btn-sm noop">Abo pausieren</button>
+              <button type="button" class="btn btn-ghost-danger btn-sm noop" aria-disabled="true">Abo kündigen</button>
+            </div>
+            <p class="abo-hint">Die Mindestlaufzeit ist noch nicht vorbei. Kündigen ist ab 15.09.2027 möglich.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="portal-col">
+        <h3 class="portal-sub">Mieten</h3>
+        <ul class="book-list">
+          <li class="book">
+            <div class="book-date"><b>27</b><span>Nov</span></div>
+            <div class="book-body">
+              <div class="abo-top"><h4>BU02 Mid-Step</h4><span class="status st-res">Reserviert</span></div>
+              <p>Fr 27.11.2026, 10:00 – 16:00 · Stundenweise</p>
+              <p class="book-meta"><span class="mono">LB-E-02</span> · CHF 72.00 · Kaution CHF 200.00 (Offen) <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></p>
+            </div>
+          </li>
+          <li class="book">
+            <div class="book-date"><b>12</b><span>Dez</span></div>
+            <div class="book-body">
+              <div class="abo-top"><h4>BG03 Family Cargo</h4><span class="status st-res">Reserviert</span></div>
+              <p>Sa 12.12.2026 – So 13.12.2026 · Tageweise</p>
+              <p class="book-meta"><span class="mono">LB-C-01</span> · CHF 110.00 · Kaution CHF 250.00 (Offen) <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></p>
+            </div>
+          </li>
+          <li class="book past">
+            <div class="book-date"><b>03</b><span>Okt</span></div>
+            <div class="book-body">
+              <div class="abo-top"><h4>BU01 High-Step</h4><span class="status st-done">Zurück</span></div>
+              <p>Sa 03.10.2026, 09:00 – 13:00 · Stundenweise</p>
+              <p class="book-meta"><span class="mono">LB-E-01</span> · CHF 48.00 · Kaution freigegeben <span class="bsp" title="Beispielwert, in der App noch nicht festgelegt">Beispiel</span></p>
+            </div>
+          </li>
+        </ul>
+        <div class="portal-help">
+          <b>Fragen zu einer Miete?</b>
+          <span>Schreib uns an info@lobes-bikes.ch oder komm im Laden in Solothurn vorbei.</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -556,7 +786,7 @@
     </div>
     <div>
       <h4>Angebot</h4>
-      <a href="#miete">Kindervelo-Abo</a><a href="#preise">Preise Miete</a><a href="#e-bikes">E-Bikes</a><a href="#faq">FAQ</a>
+      <a href="#miete">Kindervelo-Abo</a><a href="#preise">Preise Miete</a><a href="#stundenmiete">Stunden- &amp; Tagesmiete</a><a href="#e-bikes">E-Bikes</a><a href="#konto">Mein Konto</a><a href="#faq">FAQ</a>
     </div>
     <div>
       <h4>Lobes</h4>
